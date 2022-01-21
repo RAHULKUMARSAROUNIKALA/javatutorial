@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+	<student>
+		<name>Rahul Kumar</name>
+		<branch>CSE</branch>
+         <place>From Hazaribagh</place>
+		<broll>23</broll>
+		<session>2020-23</session>
+	</student>
+	<student>
+		<name>kinu Ram</name>
+		<branch>CSE</branch>
+         <place>From Gambriya</place>
+		<broll>14</broll>
+		<session>2020-23</session>
+	</student>
+	<student>
+		<name>Chehar Mani</name>
+		<branch>CSE</branch>
+        <place>From Godda</place>
+		<broll>11</broll>
+		<session>2020-23</session>
+	</student>
+    <student>
+		<name>Raj sinha</name>
+		<branch>CSE</branch>
+        <place>From Dhanbad</place>
+		<broll>26</broll>
+		<session>2020-23</session>
+	</student>
+    <student>
+		<name>Ravi kumar</name>
+		<branch>CSE</branch>
+        <place>From Jamshedpur</place>
+		<broll>29</broll>
+		<session>2020-23</session>
+	</student>
+      <student>
+		<name>Nishu kumar</name>
+		<branch>CSE</branch>
+        <place>From Latehar</place>
+		<broll>18</broll>
+		<session>2020-23</session>
+	</student>
+
+     
+</students>
