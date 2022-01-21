@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script </title>
+        <style type="text/css">
+            
+            #display div{
+                background:conic-gradient(red,blue,green,pink);
+                padding:50px;
+                border:solid 1px black;
+                text-align:center;
+                margin:10px 0;
+                color:yellow;
+            }
+            
+        </style>
+        <script>
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    myFun(this);
+                }
+            };
+            xmlhttp.open("GET", "students.xml", true);
+            xmlhttp.send();
+
+            function myFun(xml){
+               var x,i,xmlDoc, data;
+               xmlDoc=xml.responseXML;
+               data=""; 
+               x=xmlDoc.getElementsByTagName("student");
+               // Array Index 0 -> x.length(3)
+               // for(i=0; i<3;i++)
+               // 0 1 2
+               // x.nodeName - the name of x
+               // x.nodeValue - the value of x
+               // x.parentNode - the parent node of x
+               // x.childNodes - the child nodes of x
+               // x.attributes - the attributes of x
+               
+               for(i=0;i<x.length;i++){
+                   data+= "<div><h3>"+x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue+"</h3><p>"+x[i].getElementsByTagName("branch")[0].childNodes[0].nodeValue+"</p></div>";
+               }
+               document.getElementById("display").innerHTML=data;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Student Details</h1>
+        <div id="display">
+            
+         
+        </div>
+    </body>
+</html>
